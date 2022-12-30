@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./vanilla_zoom/vanilla-zoom.css">
+    <title>Library Image</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin: 0 0 1.5rem 0;">Library Zoom Image</h1>
+        <div class="vanilla-zoom" id="my-gallery">
+            <div class="sidebar">
+                <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="small-preview" alt="">
+                <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1600" class="small-preview" alt="">
+                <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1600" class="small-preview" alt="">
+            </div>
+            <div class="zoomed-image">
+                <!-- Image Zoom Template -->
+            </div>
+        </div>
+        <p style="margin: 2rem 0 0 0;">-- Created By HTML CSS TypeScript --</p>
+    </div>
+    <script src="./vanilla_zoom/vanilla-zoom.js"></script>
+    <script>
+        vanillaZoom.init("#my-gallery")
+    </script>
+</body>
+</html>

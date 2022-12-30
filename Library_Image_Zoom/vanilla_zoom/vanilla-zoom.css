@@ -1,0 +1,25 @@
+.vanilla-zoom {
+    width: 100%;
+    display: flex;
+}
+.vanilla-zoom .sidebar {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.vanilla-zoom .sidebar .small-preview {
+    width: 100%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.vanilla-zoom .zoomed-image {
+    flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-left: 5px;
+}
+.vanilla-zoom .zoomed-image img {
+    width: 100%;
+    
+}
