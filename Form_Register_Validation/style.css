@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;;
+}
+body {
+    background-color: rgba(135, 228, 251, 0.575);
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #333;
+    width: 450px;
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: #fff;
+    margin: 0 auto;
+}
+form input {
+    padding: 0.7rem;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+form label {
+    margin-top: 2rem;
+}
+form i {
+    position: absolute;
+    left: 58%;
+    top: 21%;
+}
+form input:after {
+    border: none;
+    border-bottom: 2px solid #333;
+}
+form button {
+    padding: 1rem;
+    width: 120px;
+    border:none;
+    font-size: 1rem;    
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.05s ease-in-out;
+    margin-top: 1.1rem;
+}
+form button:hover {
+    background-color: rgba(51, 51, 51, 0.175);
+}
+form button:active {
+    background-color: #333;
+    color: #fff;
+}
+.password-level-active {
+    margin-top:1rem;
+}
+#password-strong-level {
+    font-size: 15px;
+    line-height: 40px;
+}
+.bar-password-level {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 6px;
+}
+.bar-password-level span {
+    width: 40px;
+    height: 6px;
+    background-color: #333;
+}
