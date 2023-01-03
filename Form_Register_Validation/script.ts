@@ -44,6 +44,7 @@ password_input?.addEventListener('input', (event: Event) => {
     {
         if (password_input?.value.match(lower_regex) && password_input?.value.match(upper_regex) && password_input?.value.match(num_regex))
         {
+            password_strong_level?.innerText = "Strong";
             for (let i: number = 0; i < 6; i++)
             {
                 password_bar_level[i].style.backgroundColor = "green";
@@ -51,6 +52,7 @@ password_input?.addEventListener('input', (event: Event) => {
         }
         if (password_input?.value.match(lower_regex) || password_input?.value.match(upper_regex))
         {
+            password_strong_level?.innerText = "Weak";
             for (let i: number = 0; i < 2; i++)
             {
                 password_bar_level[i].style.backgroundColor = "red";
@@ -58,6 +60,7 @@ password_input?.addEventListener('input', (event: Event) => {
         }
         if (password_input?.value.match(lower_regex) && password_input?.value.match(upper_regex))
         {
+            password_strong_level?.innerText = "Medium";
             for (let i: number = 0; i < 3; i++)
             {
                 password_bar_level[i].style.backgroundColor = "yellow";

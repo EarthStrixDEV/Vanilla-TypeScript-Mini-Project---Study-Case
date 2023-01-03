@@ -38,16 +38,19 @@ Form === null || Form === void 0 ? void 0 : Form.addEventListener('submit', func
 password_input === null || password_input === void 0 ? void 0 : password_input.addEventListener('input', function (event) {
     if ((password_input === null || password_input === void 0 ? void 0 : password_input.value.length) > 0) {
         if ((password_input === null || password_input === void 0 ? void 0 : password_input.value.match(lower_regex)) && (password_input === null || password_input === void 0 ? void 0 : password_input.value.match(upper_regex)) && (password_input === null || password_input === void 0 ? void 0 : password_input.value.match(num_regex))) {
+            password_strong_level === null || password_strong_level === void 0 ? void 0 : password_strong_level.innerText = "Strong";
             for (var i = 0; i < 6; i++) {
                 password_bar_level[i].style.backgroundColor = "green";
             }
         }
         if ((password_input === null || password_input === void 0 ? void 0 : password_input.value.match(lower_regex)) || (password_input === null || password_input === void 0 ? void 0 : password_input.value.match(upper_regex))) {
+            password_strong_level === null || password_strong_level === void 0 ? void 0 : password_strong_level.innerText = "Weak";
             for (var i = 0; i < 2; i++) {
                 password_bar_level[i].style.backgroundColor = "red";
             }
         }
         if ((password_input === null || password_input === void 0 ? void 0 : password_input.value.match(lower_regex)) && (password_input === null || password_input === void 0 ? void 0 : password_input.value.match(upper_regex))) {
+            password_strong_level === null || password_strong_level === void 0 ? void 0 : password_strong_level.innerText = "Medium";
             for (var i = 0; i < 3; i++) {
                 password_bar_level[i].style.backgroundColor = "yellow";
             }
